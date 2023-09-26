@@ -14,23 +14,23 @@
 
 - props are used as parameters that you are passing to a function
 
-- default export and named export
+- default export vs named export
 
 - map function is used for iterating with items
 
-- useState functions as a hook in 
+- useState functions as a hook in JS
 
-- state variables with setter functions is used for maintaning state and re-
+- state variables with setter functions is used for maintaning state and re-rendering
 
-- useEffect is also a hook which has a callBack on dependencyArray (empty/state variables/props)
+- useEffect is also a hook which has a callBack on dependencyArray(empty/state variables/props)
 
-- fetch is used for API call to 
+- fetch is used for API call
 
-- then is used with function() for structuring responses and updating
+- then is used with function() for structuring responses and updating states
 
-- context is used to avoid propdrilling where same data is passed from parent to children continuously
+- context is used to avoid prop drilling where same data is passed from parent to children continuously
 
-- inbuild functions are used for creating, providing and using contexts
+- inbuilt functions are used for creating, providing and using contexts
 
 ## HOW TO RUN?
 
