@@ -30,15 +30,17 @@ import { useEffect, useState } from "react";
 let products = [];
 
 function Products() {
-  // Used for maintaing state and re-rendering
+  // Used for maintaning state and re-rendering
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   console.log("RENDER");
   // useEffect is a hook which has a callBack on dependencyArray
   // For empty Array it will be called for every re-render
-  // If I pass a state variable in dependenvyArray
+  // If I pass a state variable in dependenvyArray 
+  // it gets called on state change
   useEffect(() => {
+    // sample API call to fetch products
     fetch("https://602fc537a1e9d20017af105e.mockapi.io/api/v1//products")
       .then(function (response) {
         console.log(response);
@@ -49,7 +51,6 @@ function Products() {
         console.log("FETCH");
         setProducts(respJson);
         setLoading(false);
-        //setCart("UPDATED CART");
       })
       .catch(function (err) {
         setError(err);
@@ -62,7 +63,7 @@ function Products() {
     return <div> Hey, Its embarrasing you got this {error} </div>;
   }
 
-  // Add animation for app loading
+  // Add animation for loading
   else if (isLoading) {
     return (
       <div>
@@ -72,7 +73,9 @@ function Products() {
         />
       </div>
     );
-  } else {
+  } 
+  
+  else {
     return (
       <div>
         <h3>List of products</h3>

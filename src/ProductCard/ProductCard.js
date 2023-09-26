@@ -13,5 +13,8 @@ function ProductCard(props) {
   );
 }
 
-// export ProductCard function
+// named export
+// export var a = 10;
+
+// default export ProductCard function
 export default ProductCard;
